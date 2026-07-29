@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Face & gesture data
+backend/face_data/
+backend/gesture_data/
+
+# VS Code
+.vscode/

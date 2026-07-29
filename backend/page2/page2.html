@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirCanvas Secure - Login</title>
+
+    <link rel="stylesheet" href="page2.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+
+    <div class="left">
+
+        <h1>AirCanvas Secure</h1>
+
+        <h2>Welcome Back!</h2>
+
+        <p>
+            Login securely using Face Verification and Air Gesture Authentication.
+        </p>
+
+    </div>
+
+    <!-- Right Panel -->
+
+    <div class="right">
+
+        <form id="loginForm">
+
+            <h1>Login</h1>
+
+            <div class="inputBox">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter Username"
+                    required>
+
+            </div>
+
+            <button
+                type="button"
+                id="faceLoginBtn">
+
+                📷 Verify Face
+
+            </button>
+
+            <button
+                type="button"
+                id="gestureBtn"
+                disabled>
+
+                ✋ Verify Gesture
+
+            </button>
+
+            <button
+                type="submit"
+                id="loginBtn">
+
+                🔐 Login
+
+            </button>
+
+            <p class="registerLink">
+
+                Don't have an account?
+
+                <a href="../register/page1.html">
+                    Create Account
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="page2.js"></script>
+
+</body>
+</html>

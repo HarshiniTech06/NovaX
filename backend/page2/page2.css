@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#050816,#0b1437,#141c46);
+    color:white;
+}
+
+.container{
+    width:1100px;
+    height:650px;
+    background:#12162b;
+    border-radius:25px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+
+.left{
+    flex:1;
+    padding:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:linear-gradient(135deg,#0b1437,#050816);
+}
+
+.left h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.left h2{
+    font-size:52px;
+    color:#4da3ff;
+    margin-bottom:25px;
+}
+
+.left p{
+    font-size:20px;
+    color:#cfcfcf;
+    line-height:1.6;
+}
+
+.right{
+    width:450px;
+    background:#1b1c34;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right form{
+    width:80%;
+}
+
+.right h1{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:42px;
+}
+
+.inputBox{
+    width:100%;
+    height:60px;
+    background:#2a2b47;
+    border-radius:14px;
+    margin-bottom:22px;
+    display:flex;
+    align-items:center;
+    padding:0 18px;
+}
+
+.inputBox i{
+    color:#5fa8ff;
+    font-size:22px;
+    margin-right:15px;
+}
+
+.inputBox input{
+    width:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:18px;
+}
+
+.inputBox input::placeholder{
+    color:#bdbdbd;
+}
+
+button{
+    width:100%;
+    height:58px;
+    border:none;
+    border-radius:14px;
+    margin-bottom:18px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+#faceLoginBtn{
+    background:#2f3d68;
+    color:white;
+}
+
+#gestureBtn{
+    background:#2f3d68;
+    color:white;
+}
+
+#gestureBtn:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+button[type="submit"]{
+    background:linear-gradient(90deg,#2f6bff,#914dff);
+    color:white;
+}
+
+button:hover:not(:disabled){
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+@media(max-width:1000px){
+
+.container{
+    width:95%;
+    flex-direction:column;
+    height:auto;
+}
+
+.left{
+    padding:50px;
+}
+
+.right{
+    width:100%;
+    padding:50px 0;
+}
+
+.left h1{
+    font-size:42px;
+}
+
+.left h2{
+    font-size:38px;
+}
+
+}
